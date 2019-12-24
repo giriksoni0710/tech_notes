@@ -9,19 +9,23 @@ import { LoginComponent } from './login/login.component';
 import { MyMaterialModule } from  './material.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     AddNotesComponent,
     RegisterComponent,
     LoginComponent,
-    WelcomeComponent
+    WelcomeComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MyMaterialModule
+    MyMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

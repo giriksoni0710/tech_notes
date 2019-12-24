@@ -2,7 +2,9 @@ const express = require('express')
 const bodyparser = require('body-parser')
 const app = express()
 const mysql = require('mysql')
+const CORS = require('cors')
 
+app.use(CORS())
 
 const connectionString = {
     host: '185.224.138.217',
@@ -31,6 +33,14 @@ app.get('/addnote', (req,res)=>{
 
 
 
+})
+
+app.get('/register', (req,res)=>{
+
+    if(req){
+        console.log(req)
+        res.send("got it")
+    }
 })
 
 app.listen('3000', ()=>{
