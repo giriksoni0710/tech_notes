@@ -9,26 +9,6 @@ header {
     
 }
 
-.addNote {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 5rem;
-}
-
-.title {
-    height: 2rem;
-    font-size: 1rem;
-}
-
-.noteBody {
-    min-height: 8rem;
-}
-
-.submitbtn {
-padding: 1rem;
-max-height: 3rem;
-margin-top: 1rem;
-max-width: 400px;
-}
-
-
+.spacer {
+    flex: 1 1 auto;
+  }

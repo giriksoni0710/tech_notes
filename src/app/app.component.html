@@ -1,11 +1,11 @@
-<header>
-    <h1>Welcome to Tech Notes</h1>
-</header>
-
-<body>
-    <div class="addNote">
-        <input class="title" type="text" placeholder="Note Title.." #title>
-        <input class="noteBody" type="text" placeholder="Enter your notes" #titlebody>
-        <input class="submitbtn" type="submit" value="Save Note" (click)="savenote(title.value, titlebody.value)">
-    </div>
-</body>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <!--  <span>HOME</span> -->
+       <span><a href="/">HOME</a></span>
+       <span class="spacer"></span>
+       <a mat-button routerLink="/register">Register</a>
+       <a mat-button routerLink="/login">Login</a>
+    </mat-toolbar-row>
+ </mat-toolbar>
+ 
+ <router-outlet></router-outlet>
