@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'techNotes';
+
+
+  // this is the method binded to the save note button click 
+  savenote(title: string, titlebody: string){
+    
+  }
+
 }
+
+
