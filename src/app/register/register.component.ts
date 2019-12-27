@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(private http: HttpClient) {
 
-    this.url = "localhost:3000/register"
+    this.url = "http://giriksoni.com/notepad/register"
 
    }
 
@@ -30,13 +30,11 @@ export class RegisterComponent implements OnInit {
     }
 
 
-    this.http.post(this.url, obj).toPromise()
-.then(data=>{
-
-  console.log(data)
-
-})
-
+   this.http.post(this.url, obj).toPromise().then(Response =>{
+    // console.log(Response);
+   }).catch(error =>{
+     console.log(error)
+   })
   }
 
 }
